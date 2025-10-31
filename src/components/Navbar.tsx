@@ -40,7 +40,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky top-0 px-3 py-4 flex items-center justify-between bg-gray-100/95 shadow-md rounded-xl z-20">
+        <nav className="sticky top-2 px-3 py-4 flex items-center justify-between bg-gray-100/95 shadow-md rounded-xl z-20">
             {/* Logo */}
             <div className="flex items-center gap-2 font-bold text-xl">
                 <FaLeaf className="text-green-600" /> CSparks
