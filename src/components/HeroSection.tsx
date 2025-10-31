@@ -19,7 +19,7 @@ const HeroSection = () => {
           Keep Our University Clean
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl mt-4 text-gray-200">
+        <p className="text-base sm:text-lg md:text-xl mt-4 text-gray-700">
           Together, we can make our campus a cleaner, greener, and healthier place for everyone.
         </p>
 

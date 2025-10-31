@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaLeaf } from "react-icons/fa";
+import { FaLeaf, FaBars, FaTimes } from "react-icons/fa";
 
 const sections = [
     { id: "hero", label: "Home" },
@@ -13,6 +13,7 @@ const sections = [
 
 const Navbar = () => {
     const [active, setActive] = useState("hero");
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,7 +29,6 @@ const Navbar = () => {
                 }
             }
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -36,15 +36,18 @@ const Navbar = () => {
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: "smooth" });
+        setMenuOpen(false); // close menu on mobile after click
     };
 
     return (
-        <nav className="sticky top-0 px-2 py-4 flex items-center justify-between bg-gray-100/95 shadow-md rounded-xl z-20">
+        <nav className="sticky top-0 px-3 py-4 flex items-center justify-between bg-gray-100/95 shadow-md rounded-xl z-20">
+            {/* Logo */}
             <div className="flex items-center gap-2 font-bold text-xl">
-                <FaLeaf /> CSparks
+                <FaLeaf className="text-green-600" /> CSparks
             </div>
 
-            <ul className="flex gap-6 font-medium">
+            {/* Desktop Menu */}
+            <ul className="hidden md:flex gap-6 font-medium">
                 {sections.map((section) => (
                     <li key={section.id}>
                         <button
@@ -57,6 +60,34 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
+
+            {/* Mobile Toggle */}
+            <button
+                className="md:hidden text-gray-700 text-2xl"
+                onClick={() => setMenuOpen((prev) => !prev)}
+                aria-label="Toggle menu"
+            >
+                {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
+            {/* Mobile Menu Drawer */}
+            {menuOpen && (
+                <div className="absolute top-full left-0 w-full bg-gray-100 shadow-md rounded-b-xl md:hidden">
+                    <ul className="flex flex-col items-center gap-4 py-4 font-medium">
+                        {sections.map((section) => (
+                            <li key={section.id}>
+                                <button
+                                    onClick={() => scrollToSection(section.id)}
+                                    className={`block text-lg transition-colors ${active === section.id ? "text-green-600" : "text-gray-700"
+                                        }`}
+                                >
+                                    {section.label}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 };
