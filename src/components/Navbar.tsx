@@ -39,7 +39,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex items-center justify-between">
+        <nav className="sticky top-0 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2 font-bold text-xl">
                 <FaLeaf /> Clean Campus
             </div>
