@@ -4,7 +4,7 @@ const HeroSection = () => {
       id="hero" className="h-screen flex flex-col lg:flex-row items-center justify-center text-center">
 
       {/* Content */}
-      <div className="flex-1 flex flex-col p-4 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme">
+      <div className="flex-1 flex flex-col p-10 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme">
         <h1 className="text-4xl sm:text-5xl md:text-6xl text-gray-100 font-extrabold flex items-center justify-center gap-3">
           Let&apos;s Keep Our University Clean
         </h1>
