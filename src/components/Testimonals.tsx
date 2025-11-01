@@ -2,13 +2,11 @@ const Testimonials = () => {
   const stories = [
     {
       name: "Sara",
-      quote:
-        "I joined the cleanup drive last semester and it completely changed how I see our campus!",
+      quote: "I joined the cleanup drive last semester and it completely changed how I see our campus!",
     },
     {
       name: "Bilal",
-      quote:
-        "It feels great to contribute to something that benefits everyone. Proud to be part of this movement.",
+      quote: "It feels great to contribute to something that benefits everyone. Proud to be part of this movement.",
     },
   ];
 

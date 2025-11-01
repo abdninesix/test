@@ -47,12 +47,12 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-6 font-medium">
+            <ul className="hidden md:flex gap-6 font-medium text-sm">
                 {sections.map((section) => (
                     <li key={section.id}>
                         <button
                             onClick={() => scrollToSection(section.id)}
-                            className={`transition-colors ${active === section.id ? "text-green-600" : "text-gray-600"
+                            className={`cursor-pointer uppercase transition-colors ${active === section.id ? "text-green-600" : "text-gray-600"
                                 }`}
                         >
                             {section.label}
