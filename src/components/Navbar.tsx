@@ -72,14 +72,13 @@ const Navbar = () => {
 
             {/* Mobile Menu Drawer */}
             {menuOpen && (
-                <div className="absolute top-full left-0 w-full bg-gray-100 shadow-md rounded-b-xl md:hidden">
+                <div className="absolute top-full left-0 w-full bg-gray-100/95 shadow-md rounded-b-xl md:hidden">
                     <ul className="flex flex-col items-center gap-4 py-4 font-medium">
                         {sections.map((section) => (
                             <li key={section.id}>
                                 <button
                                     onClick={() => scrollToSection(section.id)}
-                                    className={`block text-lg transition-colors ${active === section.id ? "text-green-600" : "text-gray-700"
-                                        }`}
+                                    className={`block text-lg duration-500 ${active === section.id ? "text-green-600" : "text-gray-700"}`}
                                 >
                                     {section.label}
                                 </button>
