@@ -4,16 +4,16 @@ const HeroSection = () => {
       id="hero" className="h-screen flex flex-col lg:flex-row items-center justify-center text-center">
 
       {/* Content */}
-      <div className="flex-1 flex flex-col items-center justify-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold flex items-center justify-center gap-3">
+      <div className="flex-1 flex flex-col p-4 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl text-gray-100 font-extrabold flex items-center justify-center gap-3">
           Let&apos;s Keep Our University Clean
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl mt-4 text-gray-700">
+        <p className="text-base sm:text-lg md:text-xl text-white">
           Together, we can make our campus a cleaner, greener, and healthier place for everyone.
         </p>
 
-        <button className="mt-6 bg-green-500 text-white cursor-pointer font-semibold rounded px-6 py-2 hover:bg-green-400 transition">
+        <button className="bg-white cursor-pointer font-semibold rounded px-6 py-2 hover:bg-white/80">
           Donate Now
         </button>
       </div>

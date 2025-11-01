@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-mytheme: #00cb4b;
+}
+
+.something {
+    color: #00cb4b;
+}
