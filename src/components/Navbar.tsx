@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-6 font-medium text-sm">
+            <ul className="hidden lg:flex gap-6 font-medium text-sm">
                 {sections.map((section) => (
                     <li key={section.id}>
                         <button
@@ -63,7 +63,7 @@ const Navbar = () => {
 
             {/* Mobile Toggle */}
             <button
-                className="md:hidden text-gray-700 text-2xl"
+                className="lg:hidden text-gray-700 text-2xl"
                 onClick={() => setMenuOpen((prev) => !prev)}
                 aria-label="Toggle menu"
             >
