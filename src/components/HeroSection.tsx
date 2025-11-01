@@ -3,17 +3,10 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <section
-      id="hero"
-      className="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/images/university-cleanup.jpg')",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white/50" />
+      id="hero" className="h-screen flex flex-col lg:flex-row items-center justify-center text-center">
 
       {/* Content */}
-      <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
+      <div className="flex-1 border flex flex-col items-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold flex items-center justify-center gap-3">
           <FaHandHoldingHeart className="text-green-400" />
           Keep Our University Clean
@@ -27,6 +20,9 @@ const HeroSection = () => {
           Donate Now
         </button>
       </div>
+
+      {/* Image */}
+      <div className="flex-1 border inset-0 bg-white/50 bg-cover bg-center">Image coming soon</div>
     </section>
   );
 };

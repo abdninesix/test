@@ -7,7 +7,7 @@ const FundUsage = () => {
   ];
 
   return (
-    <section id="usage" className="min-h-screen flex items-center justify-center bg-gray-50">
+    <section id="usage" className="min-h-screen flex items-center justify-center">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-green-700">
           How Funds Will Be Used
