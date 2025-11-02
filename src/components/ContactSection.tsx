@@ -2,7 +2,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center justify-center text-center">
+    <section id="contact" className="h-[calc(100vh-3rem)] flex flex-col items-center justify-center text-center">
       <h2 className="text-3xl sm:text-4xl font-bold text-mytheme mb-4">
         Contact Us
       </h2>

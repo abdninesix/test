@@ -1,8 +1,8 @@
 const DonationSection = () => {
   return (
-    <section id="donate" className="min-h-screen flex flex-col items-center justify-center text-center">
+    <section id="donate" className="h-[calc(100vh-3rem)] flex flex-col items-center justify-center text-center">
       <h2 className="text-3xl sm:text-4xl font-bold text-mytheme mb-4">
-        Make a Donation <p className="text-sm">(Non-functional feature at the moment.)</p>
+        Make a Donation <p className="text-base">(Non-functional feature at the moment.)</p>
       </h2>
       <p className="text-gray-700 text-base sm:text-lg max-w-xl mx-auto mb-6">
         Every rupee you contribute directly supports cleaning drives, eco-friendly
