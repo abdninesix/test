@@ -1,10 +1,10 @@
 const HeroSection = () => {
   return (
     <section
-      id="hero" className="h-screen flex flex-col lg:flex-row items-center justify-center text-center">
+      id="hero" className="h-[calc(100vh-3rem)] flex flex-col lg:flex-row items-center justify-center gap-4 text-center">
 
       {/* Content */}
-      <div className="flex-1 flex flex-col p-10 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme">
+      <div className="flex-1 flex flex-col p-9 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme">
         <h1 className="text-4xl sm:text-5xl md:text-6xl text-gray-100 font-extrabold flex items-center justify-center gap-3">
           Let&apos;s Keep Our University Clean
         </h1>
@@ -19,7 +19,9 @@ const HeroSection = () => {
       </div>
 
       {/* Image */}
-      <div className="flex-1 inset-0 bg-white/50 bg-cover bg-center">Image coming soon</div>
+      <div className="flex-1">
+        <img src="/campus/1.png" alt="Hero" className="w-full h-full object-cover rounded-xl" />
+      </div>
     </section>
   );
 };

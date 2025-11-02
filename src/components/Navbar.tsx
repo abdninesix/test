@@ -35,8 +35,11 @@ const Navbar = () => {
 
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-        setMenuOpen(false); // close menu on mobile after click
+        if (!el) return;
+        const yOffset = -64;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+        setMenuOpen(false);
     };
 
     return (
