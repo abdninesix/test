@@ -7,7 +7,7 @@ const sections = [
     { id: "usage", label: "Funds" },
     { id: "gallery", label: "Gallery" },
     { id: "donate", label: "Donate" },
-    { id: "testimonials", label: "Stories" },
+    { id: "team", label: "Team" },
     { id: "contact", label: "Contact" },
 ];
 
@@ -40,7 +40,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky top-2 h-12 px-2 flex items-center justify-between bg-gray-100/95 shadow-lg rounded-xl z-20">
+        <nav className="sticky top-0 h-12 px-2 flex items-center justify-between bg-gray-100/95 shadow-lg rounded-xl z-20">
             {/* Logo */}
             <div className="flex items-center gap-2 font-bold text-xl">
                 <FaLeaf className="text-mytheme" /> CSparks
@@ -72,7 +72,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Drawer */}
             {menuOpen && (
-                <div className="absolute top-full left-0 w-full bg-gray-100/95 shadow-md rounded-b-xl md:hidden">
+                <div className="absolute top-full left-0 w-full bg-gray-100/95 shadow-md rounded-xl md:hidden">
                     <ul className="flex flex-col items-center gap-4 py-4 font-medium">
                         {sections.map((section) => (
                             <li key={section.id}>

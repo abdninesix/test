@@ -1,7 +1,7 @@
 const AboutCampaign = () => {
   return (
     <section id="about" className="h-screen flex items-center justify-center bg-white">
-      <div className="flex flex-col gap-4">
+      <div className="max-w-2xl flex flex-col gap-4">
         <h2 className="text-3xl sm:text-4xl text-center font-bold text-mytheme">
           About the Campaign
         </h2>
