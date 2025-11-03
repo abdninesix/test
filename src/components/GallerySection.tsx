@@ -4,8 +4,8 @@ const GallerySection = () => {
 
   return (
     <section id="gallery" className="min-h-screen bg-white flex flex-col items-center justify-center gap-10">
-      <h2 className="text-3xl sm:text-4xl font-bold text-green-700">
-        Our Targets
+      <h2 className="text-3xl sm:text-4xl font-bold text-mytheme">
+        Our Targets<p className="text-base">(Incomplete section)</p>
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 w-full">
