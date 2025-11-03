@@ -5,7 +5,7 @@ const HeroSection = () => {
       className="h-[calc(100vh-3rem)] flex items-center justify-center text-center"
     >
       {/* Wrapper to control layout on small vs large screens */}
-      <div className="relative w-full flex flex-col-reverse items-center justify-center gap-4">
+      <div className="relative w-full flex flex-col items-center justify-center gap-4">
 
         {/* Image */}
         <div className="relative w-full">
@@ -24,10 +24,10 @@ const HeroSection = () => {
         </div>
 
         {/* Separate Text Block (mobile only) */}
-        <div className="h-92 flex lg:hidden flex-col items-center justify-center gap-6 p-6 bg-mytheme text-white rounded-xl shadow-lg">
+        <div className="h-96 flex lg:hidden flex-col items-center justify-center gap-6 p-6 bg-mytheme text-white rounded-xl shadow-lg">
           <h1 className="text-5xl 2xl:font-extrabold">Let&apos;s Keep Our University Clean</h1>
           <p>Together, we can make our campus a cleaner, greener, and healthier place for everyone.</p>
-          <button className="bg-white text-black font-semibold rounded px-6 py-2 active:scale-105">Donate Now</button>
+          <a href="#donate" className="bg-white text-black font-semibold rounded px-6 py-2 active:scale-105">Donate Now</a>
         </div>
       </div>
     </section>

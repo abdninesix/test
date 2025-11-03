@@ -16,19 +16,21 @@ const ContactSection = () => {
           {stories.map((story, i) => (
             <div
               key={i}
-              className="h-64 flex flex-col items-center gap-4 text-center bg-gray-50 rounded-2xl shadow-md hover:scale-110 p-4 duration-300"
+              className="h-48 flex items-center gap-4 bg-gray-100 rounded-2xl shadow-md hover:scale-105 p-4 duration-300"
             >
               <img
                 src={story.image}
                 alt={story.name}
-                className="w-24 h-24 rounded-full object-cover border-2 border-mytheme"
+                className="size-24 rounded-full object-cover border-2 border-mytheme"
               />
-              <h3 className="text-lg font-semibold text-gray-800">
-                {story.name}
-              </h3>
-              <p className="text-gray-600 italic text-sm">
-                “{story.quote}”
-              </p>
+              <div className="">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {story.name}
+                </h3>
+                <p className="text-gray-600 italic text-sm">
+                  “{story.quote}”
+                </p>
+              </div>
             </div>
           ))}
         </div>
