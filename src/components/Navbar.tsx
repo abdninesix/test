@@ -36,9 +36,9 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 h-12 px-2 flex items-center justify-between bg-gray-100/95 shadow-lg rounded-xl z-20">
             {/* Logo */}
-            <div className="flex items-center gap-2 font-bold text-xl">
+            <a href="#hero" className="flex items-center gap-2 font-bold text-xl">
                 <FaLeaf className="text-mytheme" /> CSparks
-            </div>
+            </a>
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex gap-6 font-medium text-sm">

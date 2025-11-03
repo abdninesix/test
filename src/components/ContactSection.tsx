@@ -1,53 +1,60 @@
 import { FaLeaf } from "react-icons/fa";
-import { stories } from "../data";
+import { sections, stories } from "../data";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="h-[calc(100vh-3rem)] flex flex-col gap-4 items-center justify-between">
+    <section id="contact" className="min-h-[calc(100vh-3rem)] flex flex-col gap-10 items-center justify-between">
 
       {/* Team */}
-      <div className="flex flex-col items-center justify-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-mytheme mb-6">
-          Volunteer Stories
+      <div className="min-h-[calc(100vh-3rem)] flex flex-col items-center justify-center w-full">
+        <h2 className="text-3xl sm:text-4xl font-bold text-mytheme mb-8">
+          Volunteers
         </h2>
 
-        <div className="max-w-3xl grid gap-6 w-full">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
           {stories.map((story, i) => (
-            <blockquote
+            <div
               key={i}
-              className="border-l-4 border-mytheme pl-4 italic text-gray-700"
+              className="h-64 flex flex-col items-center gap-4 text-center bg-gray-50 rounded-2xl shadow-md hover:scale-110 p-4 duration-300"
             >
-              “{story.quote}” —{" "}
-              <span className="font-semibold not-italic">{story.name}</span>
-            </blockquote>
+              <img
+                src={story.image}
+                alt={story.name}
+                className="w-24 h-24 rounded-full object-cover border-2 border-mytheme"
+              />
+              <h3 className="text-lg font-semibold text-gray-800">
+                {story.name}
+              </h3>
+              <p className="text-gray-600 italic text-sm">
+                “{story.quote}”
+              </p>
+            </div>
           ))}
         </div>
       </div>
 
       {/* Footer */}
-      <div className='w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-lg p-8'>
+      <div className='w-full grid grid-cols-1 md:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-lg p-8'>
         <div className='flex flex-col gap-4'>
-          <a href="/" className="flex items-center gap-2 font-bold text-xl">
+          <a href="#hero" className="flex items-center gap-2 font-bold text-xl">
             <FaLeaf className="text-mytheme" /> CSparks
           </a>
-          <p className='text-sm'>&copy; {new Date().getFullYear()} Civic Sparks</p>
+          <p className='text-sm'>&copy; {new Date().getFullYear()} Civics Sparks</p>
           <p className='text-sm'>All rights reserved.</p>
         </div>
 
         <div className='flex flex-col gap-4'>
           <p className='text-white'>Links</p>
-          <a href="/">Home</a>
-          <a href="/">Contact</a>
-          <a href="/">Terms of Service</a>
-          <a href="/">Privacy Policy</a>
+          {sections.map((section) => (
+            <a key={section.id} href={`#${section.id}`}>{section.label}</a>
+          ))}
         </div>
 
         <div className='flex flex-col gap-4'>
           <p className='text-white'>Contact</p>
-          <a href="/">All Products</a>
-          <a href="/">New Arrivals</a>
-          <a href="/">Nest Sellers</a>
-          <a href="/">Sale</a>
+          <a href="/">+92 123 456 789</a>
+          <a href="/">something@something.com</a>
+          <a href="/">UET, Peshawar</a>
         </div>
       </div>
     </section>

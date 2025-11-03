@@ -16,34 +16,18 @@ const HeroSection = () => {
           />
 
           {/* Overlay (desktop only) */}
-          <div className="hidden lg:flex absolute max-w-2xl top-1/3 left-12 flex-col p-6 items-center justify-center gap-6 rounded-xl shadow-lg bg-mytheme/80">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl text-gray-100 font-extrabold">
-              Let&apos;s Keep Our University Clean
-            </h1>
-
-            <p className="text-base sm:text-lg md:text-xl text-white">
-              Together, we can make our campus a cleaner, greener, and healthier place for everyone.
-            </p>
-
-            <button className="bg-white cursor-pointer font-semibold rounded px-6 py-2 hover:bg-white/80">
-              Donate Now
-            </button>
+          <div className="hidden lg:flex absolute max-w-2xl bottom-12 right-12 flex-col p-6 items-center justify-center gap-6 rounded-xl shadow-lg bg-black/70 text-white">
+            <h1 className="lg:text-6xl font-extrabold">Let&apos;s Keep Our University Clean</h1>
+            <p className="text-xl">Together, we can make our campus a cleaner, greener, and healthier place for everyone.</p>
+            <button className="bg-mytheme cursor-pointer font-semibold rounded px-6 py-2 hover:bg-mytheme/80">Donate Now</button>
           </div>
         </div>
 
         {/* Separate Text Block (mobile only) */}
-        <div className="h-82 flex lg:hidden flex-col items-center justify-center gap-4 p-6 bg-mytheme rounded-xl shadow-lg">
-          <h1 className="text-4xl text-gray-100 font-extrabold">
-            Let&apos;s Keep Our University Clean
-          </h1>
-
-          <p className="text-white">
-            Together, we can make our campus a cleaner, greener, and healthier place for everyone.
-          </p>
-
-          <button className="bg-white cursor-pointer font-semibold rounded px-6 py-2 hover:bg-white/80">
-            Donate Now
-          </button>
+        <div className="h-92 flex lg:hidden flex-col items-center justify-center gap-6 p-6 bg-mytheme text-white rounded-xl shadow-lg">
+          <h1 className="text-5xl 2xl:font-extrabold">Let&apos;s Keep Our University Clean</h1>
+          <p>Together, we can make our campus a cleaner, greener, and healthier place for everyone.</p>
+          <button className="bg-white text-black font-semibold rounded px-6 py-2 active:scale-105">Donate Now</button>
         </div>
       </div>
     </section>
