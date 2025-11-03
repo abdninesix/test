@@ -51,14 +51,14 @@ const ContactSection = () => {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <p className='text-white'>Links</p>
+          <p className='font-medium text-white'>Links</p>
           {sections.map((section) => (
             <a key={section.id} href={`#${section.id}`}>{section.label}</a>
           ))}
         </div>
 
         <div className='flex flex-col gap-4'>
-          <p className='text-white'>Contact</p>
+          <p className='font-medium text-white'>Contact</p>
           <a href="/">+92 123 456 789</a>
           <a href="/">something@something.com</a>
           <a href="/">UET, Peshawar</a>
