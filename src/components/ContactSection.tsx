@@ -7,24 +7,25 @@ const ContactSection = () => {
     <section id="contact" className="min-h-[calc(100vh-3rem)] flex flex-col gap-10 items-center justify-between">
 
       {/* Team */}
-      <div className="min-h-[calc(100vh-3rem)] flex flex-col items-center justify-center w-full">
-        <h2 className="text-3xl sm:text-4xl font-bold text-mytheme mb-8">
+      <div className="min-h-[calc(100vh-3rem)] flex flex-col items-center justify-center gap-10 w-full">
+        <h2 className="text-3xl sm:text-4xl font-bold text-mytheme">
           Volunteers
         </h2>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 place-items-center">
           {stories.map((story, i) => (
             <div
               key={i}
-              className="h-48 flex items-center gap-4 bg-gray-100 rounded-xl shadow-md p-4"
+              className="h-36 flex items-center gap-4 bg-gray-100 rounded-l-full shadow-md p-4"
             >
               <img
                 src={story.image}
                 alt={story.name}
                 loading="lazy"
+                sizes="(max-width: 640px) 150px, 300px"
                 className="size-24 rounded-full object-cover border-2 border-mytheme hover:scale-105 duration-300"
               />
-              <div className="">
+              <div>
                 <h3 className="text-lg font-semibold text-gray-800">
                   {story.name}
                 </h3>

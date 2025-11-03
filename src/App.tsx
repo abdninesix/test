@@ -2,6 +2,7 @@ import AboutCampaign from "./components/AboutCampaign"
 import ContactSection from "./components/ContactSection"
 import DonationSection from "./components/DonationSection"
 import FundUsage from "./components/FundUsage"
+import GallerySection from "./components/GallerySection"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 
@@ -12,9 +13,8 @@ const App = () => {
       <HeroSection />
       <AboutCampaign />
       <FundUsage />
-      {/* <GallerySection /> */}
+      <GallerySection />
       <DonationSection />
-      {/* <Testimonials /> */}
       <ContactSection />
     </main>
   )

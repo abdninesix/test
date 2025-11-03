@@ -64,3 +64,11 @@ export const sections = [
     { id: "donate", label: "Donate" },
     { id: "contact", label: "Contact" },
 ];
+
+export const images = [
+    "/campus/cleanup1.jpg",
+    "/campus/cleanup2.jpg",
+    "/campus/cleanup3.jpg",
+    "/campus/cleanup4.jpg",
+    "/campus/cleanup5.jpg",
+];
