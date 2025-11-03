@@ -1,5 +1,6 @@
 import { FaLeaf } from "react-icons/fa";
 import { sections, stories } from "../data";
+import Logo from "./Logo";
 
 const ContactSection = () => {
   return (
@@ -34,13 +35,14 @@ const ContactSection = () => {
       </div>
 
       {/* Footer */}
-      <div className='w-full grid grid-cols-1 md:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-lg p-8'>
+      <div className='w-full grid grid-cols-1 md:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-lg p-8 mb-8'>
         <div className='flex flex-col gap-4'>
           <a href="#hero" className="flex items-center gap-2 font-bold text-xl">
             <FaLeaf className="text-mytheme" /> CSparks
           </a>
           <p className='text-sm'>&copy; {new Date().getFullYear()} Civics Sparks</p>
           <p className='text-sm'>All rights reserved.</p>
+          <a href="https://abify.vercel.app" target="_noblank" className="flex">Developed by&nbsp;<Logo /></a>
         </div>
 
         <div className='flex flex-col gap-4'>

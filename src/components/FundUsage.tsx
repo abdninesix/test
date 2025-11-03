@@ -63,7 +63,7 @@ const FundUsage = () => {
               style={{ width: `${progress}%` }}
             />
           </div>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="mt-2 font-medium text-lg text-gray-600">
             {progress.toFixed(1)}% funded
           </p>
         </div>
