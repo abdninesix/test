@@ -16,12 +16,13 @@ const ContactSection = () => {
           {stories.map((story, i) => (
             <div
               key={i}
-              className="h-48 flex items-center gap-4 bg-gray-100 rounded-2xl shadow-md hover:scale-105 p-4 duration-300"
+              className="h-48 flex items-center gap-4 bg-gray-100 rounded-xl shadow-md p-4"
             >
               <img
                 src={story.image}
                 alt={story.name}
-                className="size-24 rounded-full object-cover border-2 border-mytheme"
+                loading="lazy"
+                className="size-24 rounded-full object-cover border-2 border-mytheme hover:scale-105 duration-300"
               />
               <div className="">
                 <h3 className="text-lg font-semibold text-gray-800">
@@ -37,7 +38,7 @@ const ContactSection = () => {
       </div>
 
       {/* Footer */}
-      <div className='w-full grid grid-cols-1 md:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-lg p-8 mb-8'>
+      <div className='w-full grid grid-cols-1 md:grid-cols-3 items-start md:justify-between gap-8 bg-gray-800 text-gray-400 text-sm rounded-xl p-8 mb-8'>
         <div className='flex flex-col gap-4'>
           <a href="#hero" className="flex items-center gap-2 font-bold text-xl">
             <FaLeaf className="text-mytheme" /> CSparks

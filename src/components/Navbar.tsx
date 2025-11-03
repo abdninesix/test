@@ -34,7 +34,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky top-2 h-12 px-2 flex items-center justify-between bg-gray-100/90 shadow-lg rounded-full z-20">
+        <nav className="sticky top-2 h-12 px-4 flex items-center justify-between bg-gray-100/90 shadow-lg rounded-full z-20">
             {/* Logo */}
             <a href="#hero" className="flex items-center gap-2 font-bold text-xl">
                 <FaLeaf className="text-mytheme" /> CSparks

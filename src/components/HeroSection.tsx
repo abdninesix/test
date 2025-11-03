@@ -12,6 +12,7 @@ const HeroSection = () => {
           <img
             src="/campus/1.png"
             alt="Hero"
+            loading="eager"
             className="w-full h-full object-cover rounded-xl"
           />
 
