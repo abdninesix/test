@@ -57,9 +57,9 @@ const FundUsage = () => {
             <span>Raised: PKR {currentAmount.toLocaleString()}</span>
             <span>Goal: PKR {totalGoal.toLocaleString()}</span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+          <div className="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
             <div
-              className="bg-mytheme h-4 transition-all duration-500 ease-out"
+              className="bg-mytheme h-full duration-500 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>

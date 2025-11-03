@@ -44,7 +44,8 @@ const ContactSection = () => {
           </a>
           <p className='text-sm'>&copy; {new Date().getFullYear()} Civics Sparks</p>
           <p className='text-sm'>All rights reserved.</p>
-          <a href="https://abify.vercel.app" target="_noblank" className="flex">Developed by&nbsp;<Logo /></a>
+          <p className="flex items-center text-white">Developed by Abdullah</p>
+          <a href="https://abify.vercel.app" target="_noblank" className="text-white"><Logo /></a>
         </div>
 
         <div className='flex flex-col gap-4'>

@@ -1,7 +1,7 @@
 
 const Logo = () => {
   return (
-    <div className="flex group">
+    <div className="flex items-end group">
       {/* SVG Wrapper */}
       <div className="relative size-6 flex-shrink-0">
         <svg
