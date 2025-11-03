@@ -1,15 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaLeaf, FaBars, FaTimes } from "react-icons/fa";
-
-const sections = [
-    { id: "hero", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "usage", label: "Funds" },
-    { id: "gallery", label: "Gallery" },
-    { id: "donate", label: "Donate" },
-    { id: "team", label: "Team" },
-    { id: "contact", label: "Contact" },
-];
+import { sections } from "../data";
 
 const Navbar = () => {
     const [active, setActive] = useState("hero");
